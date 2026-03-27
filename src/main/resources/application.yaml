@@ -1,3 +1,6 @@
+server:
+  port: 8761
+
 spring:
   application:
     name: service-registry
@@ -9,8 +12,7 @@ spring:
     config:
       uri: http://localhost:9000
 
-  eureka:
-    client:
-      registerWithEureka: false # Stops the registry from registering itself
-      fetchRegistry: false      # Stops it from trying to fetch a registry from another server
-
+eureka:
+  client:
+    registerWithEureka: false # Stops the registry from registering itself
+    fetchRegistry: false      # Stops it from trying to fetch a registry from another server
